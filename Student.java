@@ -1,28 +1,30 @@
 package corejava;
 
-class Student 
-{
-	private int id;
-	private String name;
-	private int age;
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public int getAge() {
-		return age;
-	}
-	public void setAge(int age) {
-		this.age = age;
-	}
-	
+public class Student extends Person {
+	//Fields
+    private int studentId;
+    private String major;
+    //Methods
+    public Student(String name, int age, int studentId, String major) {
+        super(name, age);
+        this.studentId = studentId;
+        this.major = major;
+    }
+    //Creating Getter and Setter
+    public int getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
+    }
 
 }
